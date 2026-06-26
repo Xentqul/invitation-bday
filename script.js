@@ -2,7 +2,7 @@ const btn = document.getElementById("btn-start");
 const screen1 = document.getElementById("screen-1");
 const screen2 = document.getElementById("screen-2");
 const screen3 = document.getElementById("screen-3");
-const audio = new Audio("/media/music/musical-accompaniment.mp3");
+const audio = new Audio("media/music/musical-accompaniment.mp3");
 
 btn.addEventListener("click", () => {
   audio.play();
