@@ -4,11 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/media/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles/css/style.css">
+
     <title>Приглашение на день рождения</title>
 </head>
 
 <body>
+    <div class="wrapper">
+        <section id="screen-1" class="screen">
+            <div class="content">
+                <div class="btn-container">
+                    <button id="btn-start" class="play-btn">▶</button>
 
+                    <svg viewBox="0 0 100 100" class="rotating-text">
+                        <defs>
+                            <path id="circlePath" d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" />
+                        </defs>
+                        <text>
+                            <textPath href="#circlePath">Включить музыку Включить музыку</textPath>
+                        </text>
+                    </svg>
+                </div>
+            </div>
+            <p class="bottom-warning">
+                Нажимай, на свой страх и риск!
+            </p>
+        </section>
+
+        <section id="screen-2" class="screen-2" style="display: none; opacity: 0;">
+            <img src="/media/images/celebration.jpg" alt="girls">
+        </section>
+
+        <section id="screen-3" class="screen-3">
+            <p class="screen3-bold gap scroll-reveal">Агент, тебе присвоен допуск уровня «25».</p>
+            <div class="description">
+                <p class="scroll-reveal">Твоя задача: прибыть в точку сбора для выполнения операции особой важности!</p>
+                <p class="scroll-reveal">Цель миссии: отпраздновать четверть века невероятных — Дианны и Дарьи!🥂📍</p>
+            </div>
+            <p class="screen3-bold gap scroll-reveal">Данные для сбора агентов</p>
+            <div class="whereis scroll-reveal">
+                <p class="text-normal"><span>Координаты:</span><br>Московская область, Коттеджный посёлок Ильинское ИЖС,
+                    165
+                </p>
+                <p><span>🕖 Время операции:</span><br>25.06.26, 16:00</p>
+            </div>
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7c3165dfaf24b4ba1adce8290071de888766b6fb97cc28873879ab7d99a3d829&amp;width=350&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
+            <p class="screen3-bold italic gap scroll-reveal">🕶 Дресс-код (камуфляж)</p>
+            <p class="text-normal scroll-reveal">Маскируемся в красный, коричневый, оливковый, бежевый.(Анализируем
+                данные с
+                фото)</p>
+            <img class="scroll-reveal" src="/media/images/style.jpg" alt="Дресс-код" style="border-radius: 15px;">
+            <p class="screen3-bold italic scroll-reveal">Пройди опрос</p>
+            <iframe class="scroll-reveal"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSeDWGfX_d5CwRCdenNIsOeEugEdCsddBO04JpJpRtx291l19g/viewform?embedded=true"
+                width="90%" height="1500px" margin="0 auto" frameborder="0" marginheight="0"
+                marginwidth="0">Загрузка…</iframe>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
