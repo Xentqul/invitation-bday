@@ -22,7 +22,7 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
-    background: url('media\images\hearts.jpg') no-repeat center center;
+    background: url('../media/images/hearts.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
